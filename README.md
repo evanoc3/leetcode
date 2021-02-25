@@ -17,3 +17,4 @@ To run the test cases for all problems, run:
 | 4 | [Median of Two Sorted Arrays](./src/problem_4/problem.md) | <span style="color:red">Hard</span> | 1364 ms | 13.2 MB |
 | 6 | [ZigZag Conversion](./src/problem_6/problem.md) | <span style="color: orange">Medium<span> | 68 ms | 13.1 MB |
 | 7 | [Reverse Integer](./src/problem_7/problem.md) | <span style="color: lightgreen">Easy<span> | 36 ms | 13.2 MB |
+| 8 | [String to Integer (atoi)](./src/problem_8/problem.md) | <span style="color: orange">Medium<span> | 44 ms | 13.3 MB |
