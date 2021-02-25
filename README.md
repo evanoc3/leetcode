@@ -25,3 +25,4 @@ python3 -m unittest src/**/*_test.py
 | 14 | [Longest Common Prefix](./src/problem_0014/problem.md) | <span style="color: lightgreen">Easy<span> | 44 ms | 13.3 MB | 19/05/2019 |
 | 17 | [Letter Combinations of a Phone Number](./src/problem_0017/problem.md) | <span style="color: orange">Medium<span> | 24 ms | 13.6 MB | 29/05/2019 |
 | 19 | [Remove Nth Node From End of List](./src/problem_0019/problem.md) | <span style="color: orange">Medium<span> | 60 ms | 14 MB | 30/05/2019 |
+| 20 | [Valid Parentheses](./src/problem_0020/problem.md) | <span style="color: lightgreen">Easy<span> | 32 ms | 13.9 MB | 30/05/2019 |
