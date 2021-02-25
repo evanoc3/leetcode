@@ -11,4 +11,5 @@ To run the test cases for all problems, run:
 
 | # | Name | Difficulty | Run time | Memory |
 | - | - | - | - | - |
+| 1 | [Two Sum](./src/problem_1/problem.md) | Easy | 1192 ms | 14.7 MB |
 
