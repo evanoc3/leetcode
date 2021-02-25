@@ -27,3 +27,7 @@ class Problem4SolutionTest(TestCase):
 		actual = Solution().findMedianSortedArrays([2], [])
 		expected = 2.00000
 		self.assertEqual(actual, expected)
+
+
+if __name__ == "__main__":
+	main()
