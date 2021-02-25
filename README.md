@@ -15,6 +15,7 @@ python3 -m unittest src/**/*_test.py
 | 2 | [Add Two Numbers](./src/problem_0002/problem.md) | <span style="color: orange">Medium<span> | 80 ms | 13.3 MB | 11/05/2019 |
 | 3 | [Longest Substring Without Repeating Characters](./src/problem_0003/problem.md) | <span style="color: orange">Medium<span> | 1720 ms | 13.3 MB | 12/05/2019 |
 | 4 | [Median of Two Sorted Arrays](./src/problem_0004/problem.md) | <span style="color:red">Hard</span> | 1364 ms | 13.2 MB | 13/05/2019 |
+| 5 | [Longest Palindromic Substring](./src/problem_0005/problem.md) | <span style="color: orange">Medium<span> | 8924 ms | 14.2 MB | 25/02/2021 |
 | 6 | [ZigZag Conversion](./src/problem_0006/problem.md) | <span style="color: orange">Medium<span> | 68 ms | 13.1 MB | 14/05/2019 |
 | 7 | [Reverse Integer](./src/problem_0007/problem.md) | <span style="color: lightgreen">Easy<span> | 36 ms | 13.2 MB | 14/05/2019 |
 | 8 | [String to Integer (atoi)](./src/problem_0008/problem.md) | <span style="color: orange">Medium<span> | 44 ms | 13.3 MB | 15/05/2019 |
