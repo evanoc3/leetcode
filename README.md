@@ -16,3 +16,4 @@ To run the test cases for all problems, run:
 | 3 | [Longest Substring Without Repeating Characters](./src/problem_3/problem.md) | Medium | 1720 ms | 13.3 MB |
 | 4 | [Median of Two Sorted Arrays](./src/problem_4/problem.md) | Hard | 1364 ms | 13.2 MB |
 | 6 | [ZigZag Conversion](./src/problem_6/problem.md) | Medium | 68 ms | 13.1 MB |
+| 7 | [Reverse Integer](./src/problem_7/problem.md) | Easy | 36 ms | 13.2 MB |
