@@ -1,6 +1,23 @@
 from unittest import TestCase, main
 from typing import List
-from .solution import ListNode, Solution
+from solution import ListNode, Solution
+
+
+# Utility functions for converting between List and ListNode
+
+def create_listnode(list: List) -> ListNode:
+	if len(list) > 0:
+		return ListNode(val=list[0], next=create_listnode(list[1:]))
+	return None
+
+
+def create_list(ln: ListNode) -> List:
+	list = []
+	while ln != None:
+		list.append(ln.val)
+		ln = ln.next
+	return list
+
 
 
 class Problem2SolutionTest(TestCase):
@@ -28,20 +45,3 @@ class Problem2SolutionTest(TestCase):
 
 if __name__ == "__main__":
 	main()
-
-
-# Utility functions for converting between List and ListNode
-
-def create_listnode(list: List) -> ListNode:
-	if len(list) > 0:
-		return ListNode(val=list[0], next=create_listnode(list[1:]))
-	return None
-
-
-def create_list(ln: ListNode) -> List:
-	list = []
-	while ln != None:
-		list.append(ln.val)
-		ln = ln.next
-	return list
-
