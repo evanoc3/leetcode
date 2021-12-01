@@ -1,4 +1,5 @@
 from typing import Optional
+from sys import maxsize
 
 
 # Definition for singly-linked list.
@@ -30,27 +31,45 @@ def serialize_list(head: ListNode) -> list[int]:
 	return output
 
 
+# Solution functions
+
+def all_empty(lists: list[ListNode]):
+	# return all([x is None for x in lists])
+	for search_list in lists:
+		if search_list is not None:
+			return False
+	return True
+
+
+def get_next_val(lists: list[ListNode]) -> ListNode:
+	best_val = min([ x.val if x is not None else maxsize for x in lists])
+	best_i = [x.val if x is not None else maxsize for x in lists].index(best_val)
+
+	lists[best_i] = lists[best_i].next
+	return ListNode(val=best_val)
+
+
 
 class Solution:
 	def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
-		output = []
+		head, tail, new_tail = None, None, None
 
-		while not self.all_empty(lists):
-			best_list_index, best_list_val = self.get_best_list_head(lists)
-			if best_list_val is None:
-				break
-			output.append(best_list_val)
-			lists[best_list_index] = lists[best_list_index].next
+		while not all_empty(lists):
+			new_tail = get_next_val(lists)
 
-		return create_linked_list(output)
-	
+			if tail is None:
+				tail = new_tail
+				continue
+			elif head is None:
+				head = tail
+			
+			tail.next = new_tail
+			tail = tail.next
 
-	def all_empty(self, lists: list[ListNode]) -> bool:
-		return all([x is None for x in lists])
-	
-
-	def get_best_list_head(self, lists: list[ListNode]) -> tuple[int, int]:
-		best_val = max([x.val for x in lists if x is not None])
-		best_i = [x.val for x in lists if x is not None].index(best_val)
-		return (best_i, best_val)
+		if head is not None:
+			return head
+		elif new_tail is not None:
+			return new_tail
+		else:
+			return None
         
