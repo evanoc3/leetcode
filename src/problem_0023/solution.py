@@ -33,5 +33,24 @@ def serialize_list(head: ListNode) -> list[int]:
 
 class Solution:
 	def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
-		return
+		output = []
+
+		while not self.all_empty(lists):
+			best_list_index, best_list_val = self.get_best_list_head(lists)
+			if best_list_val is None:
+				break
+			output.append(best_list_val)
+			lists[best_list_index] = lists[best_list_index].next
+
+		return create_linked_list(output)
+	
+
+	def all_empty(self, lists: list[ListNode]) -> bool:
+		return all([x is None for x in lists])
+	
+
+	def get_best_list_head(self, lists: list[ListNode]) -> tuple[int, int]:
+		best_val = max([x.val for x in lists if x is not None])
+		best_i = [x.val for x in lists if x is not None].index(best_val)
+		return (best_i, best_val)
         
