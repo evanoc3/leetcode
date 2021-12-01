@@ -1,6 +1,7 @@
 {
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": false,
-	"python.analysis.extraPaths": [ "src/problem_0002" ]
+	"files.exclude": {
+		"**/__init__.py": true
+	}
 }
