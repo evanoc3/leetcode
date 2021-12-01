@@ -1,6 +1,4 @@
-from unittest import TestCase
 import unittest
-from unittest.case import expectedFailure
 from src.problem_0023.solution import Solution, create_linked_list, serialize_list
 
 

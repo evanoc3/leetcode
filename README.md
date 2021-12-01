@@ -28,4 +28,5 @@ python3 -m unittest src/**/*_test.py
 | 19 | [Remove Nth Node From End of List](./src/problem_0019/problem.md) | <span style="color: orange">Medium<span> | ✔️  | 60 ms | 14 MB | 30/05/2020 |
 | 20 | [Valid Parentheses](./src/problem_0020/problem.md) | <span style="color: lightgreen">Easy<span> | ✔️  | 32 ms | 13.9 MB | 30/05/2020 |
 | 21 | [Merge Two Sorted Lists](./src/problem_0021/problem.md) | <span style="color: lightgreen">Easy<span> | ✔️  | 36 ms | 13.9 MB | 31/05/2020 |
-| 23 | [Merge k Sorted Lists](./src/problem_0023/problem.md) | <span style="color: red">Hard</span> | ✔️  | 7756ms | 17.9 MB | 1/12/2021 |
+| 23 | [Merge k Sorted Lists](./src/problem_0023/problem.md) | <span style="color: red">Hard</span> | ✔️ | 7756 ms | 17.9 MB | 1/12/2021 |
+| 26 | [Remove Duplicates from Sorted Array](./src/problem_0026/problem.md) | <span style="color: lightgreen">Easy</span> | ✔️ | 88 ms | 15.7 MB | 1/12/2021 |
