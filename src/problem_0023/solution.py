@@ -46,6 +46,10 @@ def get_next_val(lists: list[ListNode]) -> ListNode:
 	best_i = [x.val if x is not None else maxsize for x in lists].index(best_val)
 
 	lists[best_i] = lists[best_i].next
+	
+	if lists[best_i] is None:
+		del lists[best_i]
+
 	return ListNode(val=best_val)
 
 
