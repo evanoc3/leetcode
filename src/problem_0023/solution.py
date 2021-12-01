@@ -1,4 +1,4 @@
-from typing import List
+from typing import Optional
 
 
 # Definition for singly-linked list.
@@ -9,10 +9,10 @@ class ListNode:
 		self.next = next
 
 
-# Utility Methods for working with linked Lists
+# Utility methods for linked lists
 
-def create_listnode(inputs: List[int]) -> ListNode:
-	head=None
+def create_linked_list(inputs: list[int]) -> ListNode:
+	head = None
 	if len(inputs):
 		cur = ListNode(val=inputs[0], next=None)
 		head = cur
@@ -21,7 +21,8 @@ def create_listnode(inputs: List[int]) -> ListNode:
 			cur = cur.next
 	return head
 
-def serialize_list(head: ListNode) -> List[int]:
+
+def serialize_list(head: ListNode) -> list[int]:
 	output = []
 	while head != None:
 		output.append(head.val)
@@ -29,12 +30,8 @@ def serialize_list(head: ListNode) -> List[int]:
 	return output
 
 
-class Solution:
-	def mergeKLists(self, lists: List[ListNode]) -> ListNode:
-		return
-	
-	def get_best_list_head(self, lists: list[ListNode]) -> ListNode:
-		pass
-		
 
+class Solution:
+	def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
+		return
         

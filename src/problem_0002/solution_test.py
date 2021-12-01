@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 from typing import List
-from solution import ListNode, Solution
+from src.problem_0002.solution import ListNode, Solution
 
 
 # Utility functions for converting between List and ListNode

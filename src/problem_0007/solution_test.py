@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from solution import Solution
+from src.problem_0007.solution import Solution
 
 
 class Problem7SolutionTest(TestCase):

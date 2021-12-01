@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 from typing import List
-from solution import Solution, ListNode
+from src.problem_0021.solution import Solution, ListNode
 
 
 # Utility functions for working with Linked Lists
